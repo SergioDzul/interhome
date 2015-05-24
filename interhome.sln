@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "interhome", "interhome\interhome.vbproj", "{F0566F7D-03DE-49DC-8828-2AF1E3305BBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F0566F7D-03DE-49DC-8828-2AF1E3305BBA}.Debug|x86.ActiveCfg = Debug|x86
+		{F0566F7D-03DE-49DC-8828-2AF1E3305BBA}.Debug|x86.Build.0 = Debug|x86
+		{F0566F7D-03DE-49DC-8828-2AF1E3305BBA}.Release|x86.ActiveCfg = Release|x86
+		{F0566F7D-03DE-49DC-8828-2AF1E3305BBA}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
