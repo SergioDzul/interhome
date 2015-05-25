@@ -23,6 +23,7 @@ Partial Class verCatalogoProductos
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -35,29 +36,26 @@ Partial Class verCatalogoProductos
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.ClientesinternetDataGridView = New System.Windows.Forms.DataGridView()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         CType(Me.ClientesinternetDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -75,12 +73,21 @@ Partial Class verCatalogoProductos
         Me.GroupBox3.Controls.Add(Me.TextBox2)
         Me.GroupBox3.Controls.Add(Me.TextBox4)
         Me.GroupBox3.Controls.Add(Me.Label6)
-        Me.GroupBox3.Location = New System.Drawing.Point(24, 350)
+        Me.GroupBox3.Location = New System.Drawing.Point(24, 311)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(434, 180)
         Me.GroupBox3.TabIndex = 47
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Datos"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(113, 156)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(13, 13)
+        Me.Label13.TabIndex = 23
+        Me.Label13.Text = "$"
         '
         'TextBox8
         '
@@ -149,16 +156,16 @@ Partial Class verCatalogoProductos
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(24, 308)
+        Me.Button4.Location = New System.Drawing.Point(24, 508)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(129, 32)
+        Me.Button4.Size = New System.Drawing.Size(125, 26)
         Me.Button4.TabIndex = 46
         Me.Button4.Text = "Agregar Nuevo"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(678, 504)
+        Me.Button3.Location = New System.Drawing.Point(373, 508)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(85, 26)
         Me.Button3.TabIndex = 45
@@ -167,7 +174,7 @@ Partial Class verCatalogoProductos
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(582, 504)
+        Me.Button2.Location = New System.Drawing.Point(282, 508)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(85, 26)
         Me.Button2.TabIndex = 44
@@ -176,28 +183,19 @@ Partial Class verCatalogoProductos
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(486, 504)
+        Me.Button1.Location = New System.Drawing.Point(182, 508)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(85, 26)
         Me.Button1.TabIndex = 43
         Me.Button1.Text = "Editar"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(21, 65)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(141, 13)
-        Me.Label1.TabIndex = 42
-        Me.Label1.Text = "Seleccione para ver detalles"
-        '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.TextBox1)
         Me.GroupBox1.Controls.Add(Me.RadioButton2)
         Me.GroupBox1.Controls.Add(Me.RadioButton1)
-        Me.GroupBox1.Location = New System.Drawing.Point(305, 21)
+        Me.GroupBox1.Location = New System.Drawing.Point(25, 21)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(458, 57)
         Me.GroupBox1.TabIndex = 41
@@ -241,19 +239,10 @@ Partial Class verCatalogoProductos
         Me.ClientesinternetDataGridView.Size = New System.Drawing.Size(739, 208)
         Me.ClientesinternetDataGridView.TabIndex = 40
         '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(713, 319)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(34, 13)
-        Me.Label7.TabIndex = 49
-        Me.Label7.Text = "15.25"
-        '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(24, 21)
+        Me.Label10.Location = New System.Drawing.Point(521, 42)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(83, 13)
         Me.Label10.TabIndex = 50
@@ -261,9 +250,9 @@ Partial Class verCatalogoProductos
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(617, 308)
+        Me.Button5.Location = New System.Drawing.Point(678, 34)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(74, 32)
+        Me.Button5.Size = New System.Drawing.Size(85, 29)
         Me.Button5.TabIndex = 52
         Me.Button5.Text = "Cambiar"
         Me.Button5.UseVisualStyleBackColor = True
@@ -279,84 +268,39 @@ Partial Class verCatalogoProductos
         Me.GroupBox2.Controls.Add(Me.Label9)
         Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Controls.Add(Me.Label8)
-        Me.GroupBox2.Location = New System.Drawing.Point(486, 363)
+        Me.GroupBox2.Location = New System.Drawing.Point(486, 311)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(277, 124)
         Me.GroupBox2.TabIndex = 53
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Precio"
         '
-        'Label8
+        'Label20
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(19, 28)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(80, 13)
-        Me.Label8.TabIndex = 17
-        Me.Label8.Text = "Cambio a peso:"
+        Me.Label20.AutoSize = True
+        Me.Label20.Location = New System.Drawing.Point(127, 88)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(49, 13)
+        Me.Label20.TabIndex = 58
+        Me.Label20.Text = "1,160.00"
         '
-        'Label2
+        'Label19
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(72, 59)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(27, 13)
-        Me.Label2.TabIndex = 20
-        Me.Label2.Text = "IVA:"
+        Me.Label19.AutoSize = True
+        Me.Label19.Location = New System.Drawing.Point(126, 59)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(40, 13)
+        Me.Label19.TabIndex = 57
+        Me.Label19.Text = "160.00"
         '
-        'Label9
+        'Label18
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(105, 28)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(13, 13)
-        Me.Label9.TabIndex = 21
-        Me.Label9.Text = "$"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(105, 58)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(13, 13)
-        Me.Label12.TabIndex = 22
-        Me.Label12.Text = "$"
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(113, 156)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(13, 13)
-        Me.Label13.TabIndex = 23
-        Me.Label13.Text = "$"
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(698, 318)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(13, 13)
-        Me.Label14.TabIndex = 23
-        Me.Label14.Text = "$"
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(113, 20)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(13, 13)
-        Me.Label11.TabIndex = 54
-        Me.Label11.Text = "$"
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(127, 20)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(34, 13)
-        Me.Label15.TabIndex = 55
-        Me.Label15.Text = "15.25"
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(125, 29)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(49, 13)
+        Me.Label18.TabIndex = 56
+        Me.Label18.Text = "1,000.00"
         '
         'Label16
         '
@@ -376,51 +320,85 @@ Partial Class verCatalogoProductos
         Me.Label17.TabIndex = 24
         Me.Label17.Text = "Suma:"
         '
-        'Label18
+        'Label12
         '
-        Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(125, 29)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(49, 13)
-        Me.Label18.TabIndex = 56
-        Me.Label18.Text = "1,000.00"
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(105, 58)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(13, 13)
+        Me.Label12.TabIndex = 22
+        Me.Label12.Text = "$"
         '
-        'Label19
+        'Label9
         '
-        Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(126, 59)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(40, 13)
-        Me.Label19.TabIndex = 57
-        Me.Label19.Text = "160.00"
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(105, 28)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(13, 13)
+        Me.Label9.TabIndex = 21
+        Me.Label9.Text = "$"
         '
-        'Label20
+        'Label2
         '
-        Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(127, 88)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(49, 13)
-        Me.Label20.TabIndex = 58
-        Me.Label20.Text = "1,160.00"
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(72, 59)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(27, 13)
+        Me.Label2.TabIndex = 20
+        Me.Label2.Text = "IVA:"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(19, 28)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(80, 13)
+        Me.Label8.TabIndex = 17
+        Me.Label8.Text = "Cambio a peso:"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(606, 42)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(13, 13)
+        Me.Label11.TabIndex = 54
+        Me.Label11.Text = "$"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(627, 42)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(34, 13)
+        Me.Label15.TabIndex = 55
+        Me.Label15.Text = "15.25"
+        '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(638, 459)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(125, 32)
+        Me.Button6.TabIndex = 56
+        Me.Button6.Text = "Regresar al menú"
+        Me.Button6.UseVisualStyleBackColor = True
         '
         'verCatalogoProductos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(784, 561)
+        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label15)
-        Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.ClientesinternetDataGridView)
         Me.Name = "verCatalogoProductos"
@@ -450,13 +428,11 @@ Partial Class verCatalogoProductos
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
     Friend WithEvents ClientesinternetDataGridView As System.Windows.Forms.DataGridView
-    Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
@@ -465,7 +441,6 @@ Partial Class verCatalogoProductos
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents Label15 As System.Windows.Forms.Label
     Friend WithEvents Label16 As System.Windows.Forms.Label
@@ -473,4 +448,5 @@ Partial Class verCatalogoProductos
     Friend WithEvents Label20 As System.Windows.Forms.Label
     Friend WithEvents Label19 As System.Windows.Forms.Label
     Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents Button6 As System.Windows.Forms.Button
 End Class

@@ -76,6 +76,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adminPagos.Designer.vb">
+      <DependentUpon>adminPagos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="adminPagos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="formPrincipal.Designer.vb">
       <DependentUpon>formPrincipal.vb</DependentUpon>
     </Compile>
@@ -129,6 +135,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="adminPagos.resx">
+      <DependentUpon>adminPagos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formPrincipal.resx">
       <DependentUpon>formPrincipal.vb</DependentUpon>
     </EmbeddedResource>

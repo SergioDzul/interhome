@@ -22,18 +22,13 @@ Partial Class verCliente
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Me.InterhomeDataSet = New interhome.interhomeDataSet()
-        Me.InterhomeDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ClientesinternetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ClientesinternetTableAdapter = New interhome.interhomeDataSetTableAdapters.clientesinternetTableAdapter()
-        Me.TableAdapterManager = New interhome.interhomeDataSetTableAdapters.TableAdapterManager()
         Me.ClientesinternetDataGridView = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -41,13 +36,12 @@ Partial Class verCliente
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
         Me.RadioButton5 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -62,9 +56,8 @@ Partial Class verCliente
         Me.Button5 = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.Button6 = New System.Windows.Forms.Button()
         CType(Me.InterhomeDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.InterhomeDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ClientesinternetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ClientesinternetDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -76,27 +69,6 @@ Partial Class verCliente
         '
         Me.InterhomeDataSet.DataSetName = "interhomeDataSet"
         Me.InterhomeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'InterhomeDataSetBindingSource
-        '
-        Me.InterhomeDataSetBindingSource.DataSource = Me.InterhomeDataSet
-        Me.InterhomeDataSetBindingSource.Position = 0
-        '
-        'ClientesinternetBindingSource
-        '
-        Me.ClientesinternetBindingSource.DataMember = "clientesinternet"
-        Me.ClientesinternetBindingSource.DataSource = Me.InterhomeDataSet
-        '
-        'ClientesinternetTableAdapter
-        '
-        Me.ClientesinternetTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.clientesinternetTableAdapter = Me.ClientesinternetTableAdapter
-        Me.TableAdapterManager.empresaTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = interhome.interhomeDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
         'ClientesinternetDataGridView
         '
@@ -112,12 +84,22 @@ Partial Class verCliente
         Me.GroupBox1.Controls.Add(Me.TextBox1)
         Me.GroupBox1.Controls.Add(Me.RadioButton2)
         Me.GroupBox1.Controls.Add(Me.RadioButton1)
-        Me.GroupBox1.Location = New System.Drawing.Point(202, 15)
+        Me.GroupBox1.Location = New System.Drawing.Point(25, 12)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(561, 57)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Filtrar por:"
+        '
+        'RadioButton3
+        '
+        Me.RadioButton3.AutoSize = True
+        Me.RadioButton3.Location = New System.Drawing.Point(193, 26)
+        Me.RadioButton3.Name = "RadioButton3"
+        Me.RadioButton3.Size = New System.Drawing.Size(58, 17)
+        Me.RadioButton3.TabIndex = 4
+        Me.RadioButton3.Text = "Ciudad"
+        Me.RadioButton3.UseVisualStyleBackColor = True
         '
         'TextBox1
         '
@@ -147,15 +129,6 @@ Partial Class verCliente
         Me.RadioButton1.TabStop = True
         Me.RadioButton1.Text = "Nombre"
         Me.RadioButton1.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(21, 59)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(141, 13)
-        Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Seleccione para ver detalles"
         '
         'Label3
         '
@@ -214,16 +187,6 @@ Partial Class verCliente
         Me.Label6.TabIndex = 12
         Me.Label6.Text = "Ciudad:"
         '
-        'RadioButton3
-        '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(193, 26)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(58, 17)
-        Me.RadioButton3.TabIndex = 4
-        Me.RadioButton3.Text = "Ciudad"
-        Me.RadioButton3.UseVisualStyleBackColor = True
-        '
         'Label8
         '
         Me.Label8.AutoSize = True
@@ -262,17 +225,6 @@ Partial Class verCliente
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Servicio"
         '
-        'RadioButton4
-        '
-        Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Location = New System.Drawing.Point(21, 17)
-        Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(76, 17)
-        Me.RadioButton4.TabIndex = 0
-        Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "En función"
-        Me.RadioButton4.UseVisualStyleBackColor = True
-        '
         'RadioButton5
         '
         Me.RadioButton5.AutoSize = True
@@ -284,31 +236,42 @@ Partial Class verCliente
         Me.RadioButton5.Text = "Cancelado"
         Me.RadioButton5.UseVisualStyleBackColor = True
         '
+        'RadioButton4
+        '
+        Me.RadioButton4.AutoSize = True
+        Me.RadioButton4.Location = New System.Drawing.Point(21, 17)
+        Me.RadioButton4.Name = "RadioButton4"
+        Me.RadioButton4.Size = New System.Drawing.Size(76, 17)
+        Me.RadioButton4.TabIndex = 0
+        Me.RadioButton4.TabStop = True
+        Me.RadioButton4.Text = "En función"
+        Me.RadioButton4.UseVisualStyleBackColor = True
+        '
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(420, 512)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(85, 26)
+        Me.Button1.Size = New System.Drawing.Size(69, 26)
         Me.Button1.TabIndex = 18
-        Me.Button1.Text = "Editar"
+        Me.Button1.Text = "Guardar"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(578, 513)
+        Me.Button2.Location = New System.Drawing.Point(503, 513)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(85, 26)
+        Me.Button2.Size = New System.Drawing.Size(73, 26)
         Me.Button2.TabIndex = 19
-        Me.Button2.Text = "Guardar"
+        Me.Button2.Text = "Cancelar"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(669, 513)
+        Me.Button3.Location = New System.Drawing.Point(647, 513)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(85, 26)
+        Me.Button3.Size = New System.Drawing.Size(107, 26)
         Me.Button3.TabIndex = 20
-        Me.Button3.Text = "Cancelar"
+        Me.Button3.Text = "Regresar al menú"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'CheckBox1
@@ -374,18 +337,18 @@ Partial Class verCliente
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(24, 312)
+        Me.Button4.Location = New System.Drawing.Point(24, 314)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(129, 33)
+        Me.Button4.Size = New System.Drawing.Size(98, 32)
         Me.Button4.TabIndex = 28
-        Me.Button4.Text = "Agregar Nuevo"
+        Me.Button4.Text = "Editar"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(183, 118)
+        Me.Button5.Location = New System.Drawing.Point(188, 118)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(129, 33)
+        Me.Button5.Size = New System.Drawing.Size(120, 32)
         Me.Button5.TabIndex = 29
         Me.Button5.Text = "Ver historial de pago"
         Me.Button5.UseVisualStyleBackColor = True
@@ -426,11 +389,21 @@ Partial Class verCliente
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Acerca del internet"
         '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(634, 36)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(129, 32)
+        Me.Button6.TabIndex = 32
+        Me.Button6.Text = "Agregar Nuevo"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
         'verCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(784, 561)
+        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.Button4)
@@ -438,14 +411,11 @@ Partial Class verCliente
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.ClientesinternetDataGridView)
         Me.Name = "verCliente"
         Me.Text = "verCliente"
         CType(Me.InterhomeDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.InterhomeDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ClientesinternetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ClientesinternetDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -456,20 +426,14 @@ Partial Class verCliente
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox4.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents InterhomeDataSetBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents InterhomeDataSet As interhome.interhomeDataSet
-    Friend WithEvents ClientesinternetBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents ClientesinternetTableAdapter As interhome.interhomeDataSetTableAdapters.clientesinternetTableAdapter
-    Friend WithEvents TableAdapterManager As interhome.interhomeDataSetTableAdapters.TableAdapterManager
     Friend WithEvents ClientesinternetDataGridView As System.Windows.Forms.DataGridView
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents RadioButton3 As System.Windows.Forms.RadioButton
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
@@ -498,4 +462,5 @@ Partial Class verCliente
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
     Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
+    Friend WithEvents Button6 As System.Windows.Forms.Button
 End Class
